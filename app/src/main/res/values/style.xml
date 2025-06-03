@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomNavigationText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:fontFamily">@font/oswald_bold</item>
+        <item name="fontFamily">@font/oswald_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomBottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/CustomBottomNavigationText</item>
+        <item name="itemTextAppearanceInactive">@style/CustomBottomNavigationText</item>
+    </style>
+
+</resources>

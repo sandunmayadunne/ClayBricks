@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">Clay Bricks</string>
+
+    <string name="splash_activity_Text">Your Trusted Brick Partner</string>
+
+    <string name="loading">Loading ....</string>
+
+    <string name="log_page_text1">Hello,</string>
+    <string name="log_page_text2">Welcome You</string>
+    <string name="log_page_editText_hint1">Enter Your Name</string>
+    <string name="log_page_editText_hint2">Enter Your Email</string>
+    <string name="log_page_editText_hint3">Enter Your Mobile</string>
+    <string name="log_page_editText_hint4">Enter Your Password</string>
+
+    <string name="sign_in_page_text1">Sign In</string>
+    <string name="sign_in_page_text2">If you do not have a account, create one.</string>
+    <string name="sign_in_page_text3">Go to Sign Up</string>
+    <string name="sign_in_page_text4">Forget Password</string>
+    <string name="sign_in_page_text5">Admin</string>
+
+    <string name="sign_up_page_text1">Sign Up</string>
+    <string name="sign_up_page_text2">If you do have a account, Go to Sign In.</string>
+    <string name="sign_up_page_text3">Go to Sign In</string>
+
+    <string name="home_page_text1">Welcome</string>
+    <string name="home_page_text2">Our Best Sellers Products</string>
+    <string name="home_page_text3">Our Brick Structure</string>
+    <string name="home_page_text4">As you requested, we have mentioned product specification, product testing, relevant standards, material, durability and recommended condition regarding the selected product range. All types of bricks related to Clay Bricks Industry and our product specification other information regarding the product are given below.</string>
+    <string name="home_page_text5">CLASSIFICATION OF BRICKS ACCORDING TO TYPES OF NEEDS</string>
+    <string name="home_page_text6">• For 8” thick wall</string>
+    <string name="home_page_text7">• For 9” thick wall</string>
+    <string name="home_page_text8">• For 9” and 6” thick wall</string>
+    <string name="home_page_text9">• For Exposed wall</string>
+    <string name="home_page_text10">Our Product Type</string>
+
+    <string name="bottom_nav_menu_text1">Home</string>
+    <string name="bottom_nav_menu_text2">Product</string>
+    <string name="bottom_nav_menu_text3">Profile</string>
+
+    <string name="profile_page_text">Profile</string>
+    <string name="profile_page_text1">First Name</string>
+    <string name="profile_page_text2">Last Name</string>
+    <string name="profile_page_text3">Your Email</string>
+    <string name="profile_page_text4">Your Mobile</string>
+    <string name="profile_page_text5">Add Your Address</string>
+    <string name="profile_page_text6">Your Province</string>
+    <string name="profile_page_text7">Your District</string>
+    <string name="profile_page_text8">Your City</string>
+    <string name="profile_page_text9">Address Line 1</string>
+    <string name="profile_page_text10">Address Line 2</string>
+
+    <string name="Setting_page_text1">Setting</string>
+    <string name="Setting_page_text2">Change Theme</string>
+    <string name="Setting_page_text3">Change Password</string>
+    <string name="Setting_page_text4">Log Out</string>
+    <string name="Setting_page_text5">Delete Account</string>
+    <string name="Setting_page_text6">Are you sure you want to log out?</string>
+    <string name="Setting_page_text7">Are you sure you want to Delete Account</string>
+    <string name="Setting_page_text8">You want to Change Password</string>
+    <string name="Setting_page_text9">Enter Your Current Password</string>
+    <string name="Setting_page_text10">Enter Your New Password</string>
+
+    <string name="Admin_page_text1">Admin LogIn</string>
+    <string name="Admin_page_text2">Admin Email</string>
+    <string name="Admin_page_text3">Send Verification Code</string>
+    <string name="Admin_page_text4">Check Your Email</string>
+    <string name="Admin_page_text5">Add Your Verification Code</string>
+
+
+    <string name="Admin_navigation_text1">Dashboard</string>
+    <string name="Admin_navigation_text2">Admin Manager</string>
+    <string name="Admin_navigation_text3">User Manager</string>
+    <string name="Admin_navigation_text4">Product Add</string>
+    <string name="Admin_navigation_text5">Product View &amp; Update</string>
+    <string name="Admin_navigation_text6">Order Manager</string>
+    <string name="Admin_navigation_text7">Delivery Manager</string>
+    <string name="Admin_navigation_text8">Completed Orders</string>
+
+    <string name="toolbar_text1">ClayBricks Admin Panel</string>
+
+    <string name="Admin_manager_text1">Admin Data</string>
+    <string name="Admin_manager_text2">Add New Admin</string>
+    <string name="Admin_manager_text3">Add New Admin Name</string>
+    <string name="Admin_manager_text4">Add New Admin Email</string>
+    <string name="Admin_manager_text5">Add New Admin Mobile</string>
+    <string name="Admin_manager_text6">View All Admins</string>
+
+    <string name="view_admin_text1">All Admins</string>
+    <string name="view_admin_text2">Delete Admin</string>
+    <string name="view_admin_text3">Are you sure you want to delete this admin?</string>
+    <string name="view_admin_text4">Search Admin</string>
+
+    <string name="view_user_text1">All Users</string>
+    <string name="view_user_text2">Delete User</string>
+    <string name="view_user_text3">Are you sure you want to delete this user?</string>
+    <string name="view_user_text4">Search User</string>
+    <string name="view_user_text5">Name</string>
+
+    <string name="view_dialog_text">Details</string>
+    <string name="view_dialog_text1">First Name</string>
+    <string name="view_dialog_text2">Last Name</string>
+    <string name="view_dialog_text3">Email</string>
+    <string name="view_dialog_text4">Mobile</string>
+    <string name="view_dialog_text5">Province</string>
+    <string name="view_dialog_text6">District</string>
+    <string name="view_dialog_text7">City</string>
+    <string name="view_dialog_text8">Line1</string>
+    <string name="view_dialog_text9">Line2</string>
+    <string name="view_dialog_text10">Address</string>
+
+    <string name="product_manager_text1">Add Product Image</string>
+    <string name="product_manager_text2">Product Name</string>
+    <string name="product_manager_text3">Add Product Name</string>
+    <string name="product_manager_text4">Product Size</string>
+    <string name="product_manager_text5">Length (MM)</string>
+    <string name="product_manager_text6">Width (MM)</string>
+    <string name="product_manager_text7">Height (MM)</string>
+    <string name="product_manager_text8">Add Product Length</string>
+    <string name="product_manager_text9">Add Product Width</string>
+    <string name="product_manager_text10">Add Product Height</string>
+    <string name="product_manager_text11">Product Type(Category)</string>
+    <string name="product_manager_text12">Select Product Type</string>
+    <string name="product_manager_text13">Weight (KG)</string>
+    <string name="product_manager_text14">Add Product Weight</string>
+    <string name="product_manager_text15">Quantity (1k Packs)</string>
+    <string name="product_manager_text16">Add Quantity</string>
+    <string name="product_manager_text17">Add Product</string>
+    <string name="product_manager_text18">View All Product</string>
+    <string name="product_manager_text19">Search Product</string>
+    <string name="product_manager_text20">Delete Product</string>
+    <string name="product_manager_text21">Product Price (Rs.)</string>
+    <string name="product_manager_text22">Add Product price 1k Packs</string>
+    <string name="product_manager_text23">Add New Type</string>
+    <string name="product_manager_text24">Enter New Type Name</string>
+    <string name="product_manager_text25">Add</string>
+    <string name="product_manager_text26">Delete Product Type</string>
+    <string name="product_manager_text27">Delete</string>
+
+    <string name="order_page_text1">Order</string>
+    <string name="order_page_text2">Order ID :</string>
+    <string name="order_page_text3">Your Name :</string>
+    <string name="order_page_text4">Your Mobile :</string>
+    <string name="order_page_text5">Your Name &amp; Mobile Not Right GO Profile Update</string>
+    <string name="order_page_text6">Your Order Item</string>
+    <string name="order_page_text7">Set Your Delivery Location</string>
+    <string name="order_page_text8">Delivery Price In One KiloMeter (KM)</string>
+    <string name="order_page_text9">Item</string>
+    <string name="order_page_text10">Price</string>
+    <string name="order_page_text11">Delivery</string>
+    <string name="order_page_text12">Total</string>
+    <string name="order_page_text13">Conform Order</string>
+    <string name="order_page_text14">Delivery Distance</string>
+
+    <string name="orders_view_text1">Your Orders</string>
+    <string name="orders_view_text2">Your order will be confirmed within 24 hours. Please wait.</string>
+
+    <string name="admin_dashboard">New Orders</string>
+    <string name="admin_dashboard1">Admins</string>
+    <string name="admin_dashboard2">Users</string>
+    <string name="admin_dashboard3">Completed orders last week</string>
+
+    <string name="order_manager">All Orders</string>
+
+    <string name="Delivery_manager">All Delivery Orders</string>
+    <string name="Delivery_manager1">Add new delivery price for 1KM</string>
+
+    <string name="Completed_order_view">Completed Orders</string>
+
+    <string name="Order_View1">User Name</string>
+    <string name="Order_View2">User Mobile</string>
+    <string name="Order_View3">Oder Items</string>
+    <string name="Order_View4">Delivery KM</string>
+    <string name="Order_View5">Delivery Price</string>
+    <string name="Order_View6">Total Price</string>
+    <string name="Order_View7">Delivery Location</string>
+    <string name="Order_View8">Order Cancel</string>
+    <string name="Order_View9">Order Conform</string>
+
+    <string name="Order_Process_View1">Order Process</string>
+    <string name="Order_Process_View2">Pending Your Oder</string>
+    <string name="Order_Process_View3">Conform Your Order</string>
+    <string name="Order_Process_View4">Payment Success Order</string>
+    <string name="Order_Process_View5">Delivery Order</string>
+    <string name="Order_Process_View6">View Delivery</string>
+    <string name="Order_Process_View7">Delivered Order</string>
+    <string name="Order_Process_View8">Rate Order</string>
+
+</resources>

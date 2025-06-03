@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminManagerConstraintLayoutLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.AdminManagerFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="71dp">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/home_activity_style4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Admin_manager_text1"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+    <ImageView
+        android:id="@+id/adminName"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/admin_icon"
+        app:layout_constraintStart_toStartOf="@+id/adminData"
+        app:layout_constraintTop_toBottomOf="@+id/adminData" />
+
+    <TextView
+        android:id="@+id/adminNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/adminName"
+        app:layout_constraintStart_toEndOf="@+id/adminName"
+        app:layout_constraintTop_toTopOf="@+id/adminName" />
+
+    <ImageView
+        android:id="@+id/editadminName"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/adminNameText"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/adminNameText" />
+
+    <View
+        android:id="@+id/admin_name_view"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/editadminName"
+        app:layout_constraintStart_toStartOf="@+id/adminName"
+        app:layout_constraintTop_toBottomOf="@+id/adminName" />
+
+    <ImageView
+        android:id="@+id/adminEmail"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/user_mail"
+        app:layout_constraintStart_toStartOf="@+id/adminName"
+        app:layout_constraintTop_toBottomOf="@+id/admin_name_view" />
+
+    <TextView
+        android:id="@+id/adminEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/adminEmail"
+        app:layout_constraintStart_toEndOf="@+id/adminEmail"
+        app:layout_constraintTop_toTopOf="@+id/adminEmail" />
+
+    <View
+        android:id="@+id/admin_view1"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/editadminName"
+        app:layout_constraintStart_toStartOf="@+id/adminEmail"
+        app:layout_constraintTop_toBottomOf="@+id/adminEmail" />
+
+    <ImageView
+        android:id="@+id/adminMobile"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/user_mobile"
+        app:layout_constraintStart_toStartOf="@+id/adminEmail"
+        app:layout_constraintTop_toBottomOf="@+id/admin_view1" />
+
+    <TextView
+        android:id="@+id/adminMobileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/adminMobile"
+        app:layout_constraintStart_toEndOf="@+id/adminMobile"
+        app:layout_constraintTop_toTopOf="@+id/adminMobile" />
+
+    <ImageView
+        android:id="@+id/editAdminMobile"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/adminMobileText"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/adminMobileText" />
+
+    <View
+        android:id="@+id/admin_Mobile_view"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/editAdminMobile"
+        app:layout_constraintStart_toStartOf="@+id/adminMobile"
+        app:layout_constraintTop_toBottomOf="@+id/adminMobile" />
+
+    <ImageView
+        android:id="@+id/add_admin"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/home_activity_style4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/adminData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Admin_manager_text2"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/add_admin"
+        app:layout_constraintStart_toStartOf="@+id/add_admin"
+        app:layout_constraintTop_toTopOf="@+id/add_admin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/Admin_manager_text3"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/add_admin"
+        app:layout_constraintStart_toStartOf="@+id/add_admin"
+        app:layout_constraintTop_toBottomOf="@+id/adminData2">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextNewAdminName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/admin_icon"
+            android:drawablePadding="5dp"
+            android:ems="15"
+            android:fontFamily="@font/oswald_semi_bold"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextMobile2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Admin_manager_text4"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMobile"
+        app:layout_constraintStart_toStartOf="@+id/editTextMobile"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMobile">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextNewAdminEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/user_mail"
+            android:drawablePadding="5dp"
+            android:ems="15"
+            android:fontFamily="@font/oswald_semi_bold"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextMobile22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/Admin_manager_text5"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMobile2"
+        app:layout_constraintStart_toStartOf="@+id/editTextMobile2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMobile2">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextNewAdminMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/user_mobile"
+            android:drawablePadding="5dp"
+            android:ems="15"
+            android:fontFamily="@font/oswald_semi_bold"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#44D148"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Admin_manager_text2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMobile22"
+        app:layout_constraintStart_toStartOf="@+id/editTextMobile22"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMobile22" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/home_activity_style4"
+        app:layout_constraintEnd_toEndOf="@+id/add_admin"
+        app:layout_constraintStart_toStartOf="@+id/add_admin"
+        app:layout_constraintTop_toBottomOf="@+id/add_admin" />
+
+    <Button
+        android:id="@+id/viewAllAdminButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/themColour1"
+        android:text="@string/Admin_manager_text6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

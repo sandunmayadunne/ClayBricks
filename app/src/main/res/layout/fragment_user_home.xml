@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BACKGROUND"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clientFragment.UserHomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:src="@drawable/home_activity_style1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/home_page_text1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logUseName"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="userName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/cartItem"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_home_cart"
+        app:layout_constraintBottom_toBottomOf="@+id/ordersPage"
+        app:layout_constraintEnd_toStartOf="@+id/settingIcon"
+        app:layout_constraintTop_toTopOf="@+id/ordersPage" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/home_cart_notification"
+        app:layout_constraintBottom_toTopOf="@+id/cartItem"
+        app:layout_constraintEnd_toEndOf="@+id/cartItem"
+        app:layout_constraintStart_toEndOf="@+id/cartItem"
+        app:layout_constraintTop_toTopOf="@+id/cartItem" />
+
+    <TextView
+        android:id="@+id/cartItemCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_bold"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="85dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:background="@drawable/home_activity_style4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Carousel Section -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="390dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clay_bricks_carousel_image1" />
+
+                    <ImageView
+                        android:layout_width="390dp"
+                        android:layout_height="200dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clay_bricks_carousel_image2" />
+
+
+                    <ImageView
+                        android:layout_width="390dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clay_bricks_carousel_image3" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView213"
+                style="@style/TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="@string/home_page_text10"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <View
+                style="@style/ICON_AND_STYLE"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gridRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="@string/home_page_text2"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/ICON_AND_STYLE"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp" />
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:columnCount="2"
+                android:padding="10dp"
+                android:rowCount="2">
+
+                <FrameLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/engineering_bricks" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/oswald_semi_bold"
+                        android:text="Engineering Bricks"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jumbo_bricks" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/oswald_semi_bold"
+                        android:text="Jumbo Bricks"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="@string/home_page_text3"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/ICON_AND_STYLE"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/oswald_semi_bold"
+                android:paddingBottom="12dp"
+                android:text="@string/home_page_text4"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/oswald_semi_bold"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="@string/home_page_text5"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:text="@string/home_page_text6"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:text="@string/home_page_text7"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:text="@string/home_page_text9"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:text="@string/home_page_text9"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!--            <TableLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="10dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_marginEnd="10dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:padding="8dp"-->
+            <!--                android:stretchColumns="*">-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="TYPE OF BRICKS" />-->
+
+            <!--                    <TextView android:text="SIZE" />-->
+
+            <!--                    <TextView android:text="COLOR" />-->
+
+            <!--                    <TextView android:text="WEIGHT" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="ENGINEERING BRICKS" />-->
+
+            <!--                    <TextView android:text="50 X 95 X 196 MM" />-->
+
+            <!--                    <TextView android:text="Red" />-->
+
+            <!--                    <TextView android:text="2.1 KG" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="DSK BRICKS" />-->
+
+            <!--                    <TextView android:text="57 X 107 X 209 MM" />-->
+
+            <!--                    <TextView android:text="Red" />-->
+
+            <!--                    <TextView android:text="2.8 KG" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="JUMBO BRICKS" />-->
+
+            <!--                    <TextView android:text="76 X 121 X 204 MM" />-->
+
+            <!--                    <TextView android:text="Red" />-->
+
+            <!--                    <TextView android:text="3.3 KG" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="WIRE CUT BRICKS" />-->
+
+            <!--                    <TextView android:text="57 X 107 X 209 MM" />-->
+
+            <!--                    <TextView android:text="Red" />-->
+
+            <!--                    <TextView android:text="2.8 KG" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView android:text="BIG JAMBO BRICKS" />-->
+
+            <!--                    <TextView android:text="80 X 140 X 220 MM" />-->
+
+            <!--                    <TextView android:text="Red" />-->
+
+            <!--                    <TextView android:text="4.3 KG" />-->
+            <!--                </TableRow>-->
+            <!--            </TableLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/setting_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/cartItem"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/cartItem" />
+
+    <ImageView
+        android:id="@+id/ordersPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/orders_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/logUseName"
+        app:layout_constraintEnd_toStartOf="@+id/cartItem"
+        app:layout_constraintTop_toTopOf="@+id/logUseName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

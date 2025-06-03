@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderProcessViewActivity">
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/admin_page_style1"
+        android:fontFamily="@font/oswald_bold"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/Order_Process_View1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pendingOd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView59"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <ImageView
+        android:id="@+id/pandingOderArro"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/down_arrow_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/pendingOd" />
+
+    <ImageView
+        android:id="@+id/conformOderArro"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/down_arrow_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/conformOde" />
+
+    <ImageView
+        android:id="@+id/paymentSuccessArro"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/down_arrow_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/paymentSucces" />
+
+    <ImageView
+        android:id="@+id/deliveryAddArrow"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/down_arrow_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryAdd" />
+
+    <ImageView
+        android:id="@+id/oderViewMapArrow"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/down_arrow_icon"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/oderViewMap" />
+
+    <TextView
+        android:id="@+id/conformOde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pendingOd"
+        app:layout_constraintStart_toStartOf="@+id/pendingOd"
+        app:layout_constraintTop_toBottomOf="@+id/pandingOderArro" />
+
+    <TextView
+        android:id="@+id/paymentSucces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/conformOde"
+        app:layout_constraintStart_toStartOf="@+id/conformOde"
+        app:layout_constraintTop_toBottomOf="@+id/conformOderArro" />
+
+    <TextView
+        android:id="@+id/deliveryAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/paymentSucces"
+        app:layout_constraintStart_toStartOf="@+id/paymentSucces"
+        app:layout_constraintTop_toBottomOf="@+id/paymentSuccessArro" />
+
+    <TextView
+        android:id="@+id/deliveredOder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/oderViewMap"
+        app:layout_constraintStart_toStartOf="@+id/oderViewMap"
+        app:layout_constraintTop_toBottomOf="@+id/oderViewMapArrow" />
+
+    <TextView
+        android:id="@+id/oderViewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/oswald_bold"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        android:text="@string/Order_Process_View6"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/deliveryAdd"
+        app:layout_constraintStart_toStartOf="@+id/deliveryAdd"
+        app:layout_constraintTop_toBottomOf="@+id/deliveryAddArrow" />
+
+    <Button
+        android:id="@+id/rateOder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/themColour3"
+        android:fontFamily="@font/oswald_bold"
+        android:text="@string/Order_Process_View8"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/deliveredOder"
+        app:layout_constraintStart_toStartOf="@+id/deliveredOder"
+        app:layout_constraintTop_toBottomOf="@+id/deliveredOder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

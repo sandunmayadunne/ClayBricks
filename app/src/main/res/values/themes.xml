@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ClayBricks" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ClayBricks" parent="Base.Theme.ClayBricks" />
+
+    <!-- Light Mode -->
+    <style name="BACKGROUND">
+        <item name="android:background">@color/themColour2</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ICON_AND_STYLE">
+        <item name="android:background">@color/themColour7</item>
+    </style>
+
+    <style name="Theme.ClayBricks.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ClayBricks.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ClayBricks.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomBottomNavigationTexts" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:fontFamily">@font/oswald_bold</item>
+        <item name="fontFamily">@font/oswald_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <!-- Star size -->
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+
+        <!-- Colors -->
+        <item name="colorControlNormal">@color/themColour6</item>
+        <item name="colorControlActivated">@color/themColour1</item>
+    </style>
+
+</resources>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.ProductUpdateActivity">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/home_activity_style4" />
+
+    <TextView
+        android:id="@+id/productNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oswald_bold"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView25"
+        app:layout_constraintStart_toStartOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="331dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView25"
+        app:layout_constraintStart_toStartOf="@+id/imageView25"
+        app:layout_constraintTop_toBottomOf="@+id/productNameHeader"
+        app:srcCompat="@drawable/custom_edit_text2" />
+
+    <ImageView
+        android:id="@+id/updateViewProductImage"
+        android:layout_width="315dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/imageView27"
+        app:srcCompat="@drawable/add_icon" />
+
+
+    <ImageView
+        android:id="@+id/editProductImage"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+    <Button
+        android:id="@+id/imageUploadCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/inactive_red"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editProductImage"
+        app:layout_constraintEnd_toStartOf="@+id/imageUpdateButton"
+        app:layout_constraintTop_toTopOf="@+id/editProductImage" />
+
+    <Button
+        android:id="@+id/imageUpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/themColour1"
+        android:fontFamily="@font/oswald_bold"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageUploadCancelButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/imageUploadCancelButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/updateViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text2"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/editProductImage" />
+
+    <TextView
+        android:id="@+id/viewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductName"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductName" />
+
+    <ImageView
+        android:id="@+id/editProductName"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/viewProductName" />
+
+    <TextView
+        android:id="@+id/updateViewProductWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text6"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductName"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/viewProductWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductWidth"
+        app:layout_constraintEnd_toStartOf="@+id/editProductWidth"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductWidth" />
+
+    <ImageView
+        android:id="@+id/editProductWidth"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductWidth"
+        app:layout_constraintEnd_toEndOf="@+id/editProductName"
+        app:layout_constraintTop_toTopOf="@+id/viewProductWidth" />
+
+    <TextView
+        android:id="@+id/updateViewProductHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text7"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductWidth"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/viewProductHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductHeight"
+        app:layout_constraintEnd_toStartOf="@+id/editProductHeight"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductHeight" />
+
+    <ImageView
+        android:id="@+id/editProductHeight"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductHeight"
+        app:layout_constraintEnd_toEndOf="@+id/editProductWidth"
+        app:layout_constraintTop_toTopOf="@+id/viewProductHeight" />
+
+    <TextView
+        android:id="@+id/updateViewProductLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text5"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductHeight"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/viewProductLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductLength"
+        app:layout_constraintEnd_toStartOf="@+id/editProductLength"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductLength" />
+
+    <ImageView
+        android:id="@+id/editProductLength"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductLength"
+        app:layout_constraintEnd_toEndOf="@+id/editProductHeight"
+        app:layout_constraintTop_toTopOf="@+id/viewProductLength" />
+
+    <TextView
+        android:id="@+id/updateViewProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text11"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductLength"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/viewProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductType"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductType" />
+
+    <ImageView
+        android:id="@+id/editProductType"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductType"
+        app:layout_constraintEnd_toEndOf="@+id/editProductLength"
+        app:layout_constraintTop_toTopOf="@+id/viewProductType" />
+
+    <TextView
+        android:id="@+id/updateViewProductWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text13"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductType"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/viewProductWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductWeight"
+        app:layout_constraintEnd_toStartOf="@+id/editProductWeight"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductWeight" />
+
+    <ImageView
+        android:id="@+id/editProductWeight"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductWeight"
+        app:layout_constraintEnd_toEndOf="@+id/editProductType"
+        app:layout_constraintTop_toTopOf="@+id/viewProductWeight" />
+
+    <TextView
+        android:id="@+id/updateViewProductQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text15"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductWeight"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/updateViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="@string/product_manager_text21"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <TextView
+        android:id="@+id/viewProductQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textColor="@color/themColour1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/editProductQuantity"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductQuantity" />
+
+    <TextView
+        android:id="@+id/viewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/oswald_semi_bold"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/updateViewProductPrice"
+        app:layout_constraintEnd_toStartOf="@+id/editProductPrice"
+        app:layout_constraintTop_toTopOf="@+id/updateViewProductPrice"
+        android:textColor="@color/themColour1" />
+
+    <ImageView
+        android:id="@+id/editProductQuantity"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductQuantity"
+        app:layout_constraintEnd_toEndOf="@+id/editProductWeight"
+        app:layout_constraintTop_toTopOf="@+id/viewProductQuantity" />
+
+    <ImageView
+        android:id="@+id/editProductPrice"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProductPrice"
+        app:layout_constraintEnd_toEndOf="@+id/editProductQuantity"
+        app:layout_constraintTop_toTopOf="@+id/viewProductPrice" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductName"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductName"
+        app:layout_constraintTop_toBottomOf="@+id/viewProductName" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductWidth"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductWidth"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductWidth" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductHeight"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductHeight"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductHeight" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductLength"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductLength"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductLength" />
+
+    <View
+        android:id="@+id/view5"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductWeight"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductWeight"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductWeight" />
+
+    <View
+        android:id="@+id/view7"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductQuantity"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductQuantity" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductPrice"
+        app:layout_constraintTop_toBottomOf="@+id/updateViewProductPrice" />
+
+    <View
+        android:id="@+id/view6"
+        style="@style/ICON_AND_STYLE"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/editProductType"
+        app:layout_constraintStart_toStartOf="@+id/updateViewProductType"
+        app:layout_constraintTop_toBottomOf="@+id/viewProductType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

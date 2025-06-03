@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ClayBricks" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Light Mode -->
+    <style name="BACKGROUND">
+        <item name="android:background">@color/themColour5</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/themColour6</item>
+    </style>
+
+    <style name="ICON_AND_STYLE">
+        <item name="android:background">@color/themColour8</item>
+    </style>
+
+</resources>

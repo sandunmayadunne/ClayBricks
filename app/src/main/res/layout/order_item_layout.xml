@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <!-- Left Side: Order Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Order #12345"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/oswald_semi_bold"
+                android:text="Status: Pending"
+                android:textColor="@color/forgot_password_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Right Side: Cancel Button -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/themColour1"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:fontFamily="@font/oswald_bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:fontFamily="@font/oswald_bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Buy Now"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#2196F3"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:fontFamily="@font/oswald_bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Deliver"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FFC107"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:fontFamily="@font/oswald_bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Rate Order"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnReorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A8E667"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:fontFamily="@font/oswald_bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:text="Reorder"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

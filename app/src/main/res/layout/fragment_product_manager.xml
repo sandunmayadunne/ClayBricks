@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addProductConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.ProductAddFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="0dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/custom_edit_text2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <ImageView
+                    android:id="@+id/addProductImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/add_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                    app:layout_constraintStart_toStartOf="@+id/imageView26"
+                    app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/imageView26"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+                <EditText
+                    android:id="@+id/productTypeName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text3"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                    app:layout_constraintStart_toEndOf="@+id/textView24"
+                    app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text4"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text6"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView26"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <EditText
+                    android:id="@+id/productWidth"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text9"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView34"
+                    app:layout_constraintEnd_toEndOf="@+id/productTypeName"
+                    app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text7"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView34"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <EditText
+                    android:id="@+id/productHeight"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text10"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    app:layout_constraintEnd_toEndOf="@+id/productWidth"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView35"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <EditText
+                    android:id="@+id/productLength"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text8"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView36"
+                    app:layout_constraintEnd_toEndOf="@+id/productHeight"
+                    app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text11"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView36"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <Spinner
+                    android:id="@+id/selectProductType"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    app:layout_constraintEnd_toEndOf="@+id/productLength"
+                    app:layout_constraintStart_toStartOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text13"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/selectProductType"
+                    app:layout_constraintTop_toBottomOf="@+id/selectProductType" />
+
+                <EditText
+                    android:id="@+id/productWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text14"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                    app:layout_constraintEnd_toEndOf="@+id/productLength"
+                    app:layout_constraintStart_toStartOf="@+id/productLength"
+                    app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text15"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView37"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text21"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView38"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <EditText
+                    android:id="@+id/productQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text16"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                    app:layout_constraintEnd_toEndOf="@+id/productWeight"
+                    app:layout_constraintStart_toEndOf="@+id/textView38"
+                    app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+                <EditText
+                    android:id="@+id/productPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text22"
+                    android:inputType="number"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                    app:layout_constraintEnd_toEndOf="@+id/productQuantity"
+                    app:layout_constraintStart_toEndOf="@+id/textView39"
+                    app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                <Button
+                    android:id="@+id/productAddButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/themColour1"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text17"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/productQuantity"
+                    app:layout_constraintStart_toStartOf="@+id/textView38"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/home_activity_style4"
+                    app:layout_constraintEnd_toEndOf="@+id/productAddButton"
+                    app:layout_constraintStart_toStartOf="@+id/productAddButton"
+                    app:layout_constraintTop_toBottomOf="@+id/productAddButton" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text23"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                    app:layout_constraintStart_toStartOf="@+id/imageView28"
+                    app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+                <EditText
+                    android:id="@+id/newTypeText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:ems="10"
+                    android:fontFamily="@font/oswald_semi_bold"
+                    android:hint="@string/product_manager_text24"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                    app:layout_constraintEnd_toStartOf="@+id/newTypeAdd"
+                    app:layout_constraintStart_toStartOf="@+id/imageView28"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                <Button
+                    android:id="@+id/newTypeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/themColour1"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text25"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/newTypeText"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                    app:layout_constraintTop_toTopOf="@+id/newTypeText" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:src="@drawable/home_activity_style4"
+                    app:layout_constraintBottom_toBottomOf="@+id/conl"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                    app:layout_constraintStart_toStartOf="@+id/imageView28"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text26"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView29"
+                    app:layout_constraintStart_toStartOf="@+id/imageView29"
+                    app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+                <Spinner
+                    android:id="@+id/selectProductType2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/custom_edit_text2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                    app:layout_constraintEnd_toStartOf="@+id/newTypeDelete"
+                    app:layout_constraintStart_toStartOf="@+id/imageView29"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                <Button
+                    android:id="@+id/newTypeDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/themColour1"
+                    android:fontFamily="@font/oswald_bold"
+                    android:text="@string/product_manager_text27"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/selectProductType2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView29"
+                    app:layout_constraintTop_toTopOf="@+id/selectProductType2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
