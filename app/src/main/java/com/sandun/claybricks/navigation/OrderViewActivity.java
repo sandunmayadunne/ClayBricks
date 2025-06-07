@@ -222,7 +222,7 @@ public class OrderViewActivity extends AppCompatActivity implements OnMapReadyCa
                 String url = "https://maps.googleapis.com/maps/api/directions/json" +
                         "?origin=" + origin +
                         "&destination=" + destination +
-                        "&key=AIzaSyA_CgriS6HjAQIot3hYbuMZ8DwDwWjIrC4";
+                        "&key=API_KEY";
 
                 HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
                 connection.setConnectTimeout(15000);
