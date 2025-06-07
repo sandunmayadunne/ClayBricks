@@ -194,7 +194,7 @@ public class DeliveryMapActivity extends AppCompatActivity implements OnMapReady
                         "?origin=" + origin +
                         "&destination=" + destination +
                         "&mode=driving" +
-                        "&key=AIzaSyA_CgriS6HjAQIot3hYbuMZ8DwDwWjIrC4");
+                        "&key=API_KEY");
 
                 connection = (HttpURLConnection) url.openConnection();
                 connection.setReadTimeout(15000);
