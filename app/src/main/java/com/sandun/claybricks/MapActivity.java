@@ -275,7 +275,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         "origin=" + origin +
                         "&destination=" + destination +
                         "&mode=driving" +
-                        "&key=" + "AIzaSyA_CgriS6HjAQIot3hYbuMZ8DwDwWjIrC4";
+                        "&key=" + "API_KEY";
 
                 URL url = new URL(urlString);
                 connection = (HttpURLConnection) url.openConnection();
